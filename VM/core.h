@@ -60,6 +60,14 @@ void createObject(string name, double value){
     addCell(value);
     mem_objects[name] = memory.size()-1;
 }
+void updateObject(string name, string value){
+    addCell(value);
+    mem_objects[name] = memory.size()-1;
+}
+void updateObject(string name, double value){
+    addCell(value);
+    mem_objects[name] = memory.size()-1;
+}
 double readObjectAsFloat(string name){
     Value val = memory[mem_objects[name]].value;
     if(val.type != 0){
